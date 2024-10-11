@@ -11,6 +11,18 @@
 4. Minikube
 5. Helm
 
+## Project SetUp
+1. clone git project - git clone https://github.com/kritika-singh-sengar/kubernetes-advance.git
+2. Build Docker image:
+   Open terminal: 
+      > cd teacher
+      > docker build -t teacher:v1 .
+3. Tag Docker image:
+   > docker tag teacher:v1 kritikasingh02/teacher:v1
+4. Push Docker image to docker Hub:
+   > docker login --username kritikasingh02
+   > docker push kritikasingh02/teacher:v1
+
 ## Steps to run the application:
 
 1. Start minikube and verify kubectl 
